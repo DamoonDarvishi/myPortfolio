@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html,
-body {
+body, p, h1,h2,h3,h4,h5,h6 {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -17,4 +17,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  // size
+  --nav-height: 100px;
+
+  // colors
+  --light-slate: #a8b2d1;
 }
