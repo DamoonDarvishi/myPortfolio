@@ -1,15 +1,12 @@
-import './menu.module.scss'
-
-
 const Menu = () => {
   return (
-    <ul className='menu'>
-        <li>01. About</li>
-        <li>02. Exprience</li>
-        <li>03. Work</li>
-        <li>04. Contact</li>
-        <li><button>Resume</button></li>
-    </ul>
+    <ol className={'menu'}>
+      <li><a href="#about">About</a></li>
+      <li><a href="#jobs">Exprience</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button>Resume</button></li>
+    </ol>
   )
 }
 
