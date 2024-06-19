@@ -54,10 +54,15 @@ $text-color: #fff;
           color: inherit;
           position: relative;
           transition: var(--transition);
+          &:hover,
+          &:focus {
+            color: var(--shinny);
+            scale: 1.1;
+          }
         }
       }
       &::after {
-        content: "";
+        content: '';
         display: block;
         width: 1px;
         height: 90px;
@@ -89,9 +94,14 @@ $text-color: #fff;
         letter-spacing: 0.1em;
         -webkit-writing-mode: vertical-rl;
         writing-mode: vertical-rl;
+        &:hover,
+        &:focus {
+          color: var(--shinny);
+          scale: 1.1;
+        }
       }
       &::after {
-        content: "";
+        content: '';
         display: block;
         width: 1px;
         height: 90px;
@@ -117,7 +127,7 @@ $text-color: #fff;
   position: relative;
   margin: 10px 0px 40px;
   width: 100%;
-  font-size: clamp(26px,5vw,var(--fz-heading));
+  font-size: clamp(26px, 5vw, var(--fz-heading));
   white-space: nowrap;
   font-weight: 600;
   color: var(--lightest-slate);
@@ -126,15 +136,15 @@ $text-color: #fff;
     position: relative;
     bottom: 4px;
     counter-increment: section var(--count);
-    content: "0" counter(section) ".";
+    content: '0' counter(section) '.';
     margin-right: 10px;
     color: var(--green);
     font-family: var(--font-mono);
-    font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
+    font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
     font-weight: 400;
   }
   &::after {
-    content: "";
+    content: '';
     display: block;
     position: relative;
     top: -5px;
@@ -157,17 +167,17 @@ $text-color: #fff;
   padding: 0px;
   h1 {
     color: var(--shinny);
-    font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     word-spacing: 3px;
     margin-left: 8px;
   }
   h2 {
     color: var(--lightest-slate);
-    font-size: clamp(40px, 8vw, 70px);
+    font-size: clamp(20px, 8vw, 40px);
   }
   h3 {
     color: var(--slate);
-    font-size: clamp(40px, 8vw, 70px);
+    font-size: clamp(20px, 8vw, 30px);
     line-height: 0.9;
   }
   p {
@@ -239,11 +249,11 @@ $text-color: #fff;
     position: relative;
     margin: 10px 0px 40px;
     width: 100%;
-    font-size: clamp(26px,5vw,var(--fz-heading));
+    font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
     font-weight: 600;
     color: var(--lightest-slate);
-    line-height: 1.1; 
+    line-height: 1.1;
   }
   .archive-project {
     display: inline-block;
@@ -304,7 +314,7 @@ $text-color: #fff;
                 -webkit-box-align: center;
                 align-items: center;
                 padding: 5px 7px;
-            }
+              }
             }
           }
           .project-title {
@@ -362,7 +372,7 @@ $text-color: #fff;
   text-align: center;
   .numberd-heading {
     --count: 4;
-    @extend .section-title
+    @extend .section-title;
   }
   .title {
     font-size: clamp(40px, 5vw, 60px);
@@ -384,7 +394,7 @@ $text-color: #fff;
     cursor: pointer;
     transition: var(--transition);
     margin-top: 50px;
-}
+  }
 }
 .footer {
   background-color: var(--light-green);
@@ -400,7 +410,7 @@ $text-color: #fff;
   text-align: center;
 }
 
-@media (max-width: "768px") {
+@media (max-width: '768px') {
   .container {
     header {
       padding: 0px 25px;

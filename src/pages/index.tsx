@@ -36,7 +36,7 @@ const Home: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/damoon-darvishi-react-developer/">
                 <IconLinkedin />
               </a>
             </li>

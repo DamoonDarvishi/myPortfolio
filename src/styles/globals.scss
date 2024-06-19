@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 html,
-body, p, h1,h2,h3,h4,h5,h6, ul, li {
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-fira_code);
 }
 
 a {
@@ -44,10 +52,10 @@ $text-color-shinny: #9cf1ff;
   --tab-width: 120px;
   --border-radius: 4px;
   // animation
-  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   // bg colors
   --dark-green: #164a41;
-  --light-green: #4d774e;;
+  --light-green: #4d774e;
   --lightest-green: #9dc88d;
   --light-orange: #f1b24a;
   --light-slate: #a8b2d1;
