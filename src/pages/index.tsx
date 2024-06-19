@@ -1,13 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 import Navbar from '../layouts/navbar'
-import Github from '../assets/github.svg'
-import Instagram from '../assets/instagram.svg'
-import Twitter from '../assets/twitter.svg'
-import Linkedin from '../assets/linkedin.svg'
-import Codepen from '../assets/codepen.svg'
-import FolderIcon from '../assets/folder-icon.svg'
-import LinkIcon from '../assets/link-icon.svg'
+import {
+  IconCodepen,
+  IconFolderIcon,
+  IconGithub,
+  IconInstagram,
+  IconLinkIcon,
+  IconLinkedin,
+  IconTwitter,
+} from '../components/icons/icons'
 
 const Home: React.FC = () => {
   return (
@@ -19,48 +21,28 @@ const Home: React.FC = () => {
         <div className={'left'}>
           <ul>
             <li>
-              <a href="#">
-                <Image src={Github} width={48} height={48} alt="social-media" />
+              <a href="https://github.com/DamoonDarvishi">
+                <IconGithub />
               </a>
             </li>
             <li>
               <a href="#">
-                <Image
-                  src={Instagram}
-                  width={48}
-                  height={48}
-                  alt="social-media"
-                />
+                <IconInstagram />
               </a>
             </li>
             <li>
               <a href="#">
-                <Image
-                  src={Twitter}
-                  width={48}
-                  height={48}
-                  alt="social-media"
-                />
+                <IconTwitter />
               </a>
             </li>
             <li>
               <a href="#">
-                <Image
-                  src={Linkedin}
-                  width={48}
-                  height={48}
-                  alt="social-media"
-                />
+                <IconLinkedin />
               </a>
             </li>
             <li>
               <a href="#">
-                <Image
-                  src={Codepen}
-                  width={48}
-                  height={48}
-                  alt="social-media"
-                />
+                <IconCodepen />
               </a>
             </li>
           </ul>
@@ -160,19 +142,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <Image src={FolderIcon} alt="" />
+                          <IconFolderIcon />
                         </div>
                         <div className="project-links">
                           <a href="#">
-                            <Image src={Github} alt="" />
+                            <IconGithub />
                           </a>
                           <a href="#">
-                            <Image
-                              src={LinkIcon}
-                              alt=""
-                              width={24}
-                              height={24}
-                            />
+                            <IconLinkIcon />
                           </a>
                         </div>
                       </div>
@@ -202,19 +179,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <Image src={FolderIcon} alt="" />
+                          <IconFolderIcon />
                         </div>
                         <div className="project-links">
                           <a href="#">
-                            <Image src={Github} alt="" />
+                            <IconGithub />
                           </a>
                           <a href="#">
-                            <Image
-                              src={LinkIcon}
-                              alt=""
-                              width={24}
-                              height={24}
-                            />
+                            <IconLinkIcon width={24} height={24} />
                           </a>
                         </div>
                       </div>
@@ -244,19 +216,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <Image src={FolderIcon} alt="" />
+                          <IconFolderIcon />
                         </div>
                         <div className="project-links">
                           <a href="#">
-                            <Image src={Github} alt="" />
+                            <IconGithub />
                           </a>
                           <a href="#">
-                            <Image
-                              src={LinkIcon}
-                              alt=""
-                              width={24}
-                              height={24}
-                            />
+                            <IconLinkIcon />
                           </a>
                         </div>
                       </div>
@@ -286,19 +253,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <Image src={FolderIcon} alt="" />
+                          <IconFolderIcon />
                         </div>
                         <div className="project-links">
                           <a href="#">
-                            <Image src={Github} alt="" />
+                            <IconGithub />
                           </a>
                           <a href="#">
-                            <Image
-                              src={LinkIcon}
-                              alt=""
-                              width={24}
-                              height={24}
-                            />
+                            <IconLinkIcon />
                           </a>
                         </div>
                       </div>
@@ -328,19 +290,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <Image src={FolderIcon} alt="" />
+                          <IconFolderIcon />
                         </div>
                         <div className="project-links">
                           <a href="#">
-                            <Image src={Github} alt="" />
+                            <IconGithub />
                           </a>
                           <a href="#">
-                            <Image
-                              src={LinkIcon}
-                              alt=""
-                              width={24}
-                              height={24}
-                            />
+                            <IconLinkIcon />
                           </a>
                         </div>
                       </div>
@@ -370,19 +327,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <Image src={FolderIcon} alt="" />
+                          <IconFolderIcon />
                         </div>
                         <div className="project-links">
                           <a href="#">
-                            <Image src={Github} alt="" />
+                            <IconGithub />
                           </a>
                           <a href="#">
-                            <Image
-                              src={LinkIcon}
-                              alt=""
-                              width={24}
-                              height={24}
-                            />
+                            <IconLinkIcon />
                           </a>
                         </div>
                       </div>
