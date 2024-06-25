@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
-
+const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
+  basePath: isProd ? '/myPortfolio' : '',
+  output: 'export',
+  distDir: 'dist',
   reactStrictMode: true,
   swcMinify: true,
   sassOptions: {
