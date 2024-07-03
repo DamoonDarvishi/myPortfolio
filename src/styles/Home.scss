@@ -1,9 +1,3 @@
-$main-color: #164a41;
-$bg-green-700: #4d774e;
-$bg-green-500: #9dc88d;
-$bg-orange-500: #f1b24a;
-$text-color: #fff;
-
 .root {
   background-color: var(--dark-green);
 }
@@ -187,9 +181,9 @@ $text-color: #fff;
   }
   a {
     display: inline-block;
-    color: #64ffda;
+    color: var(--shinny);
     background-color: transparent;
-    border: 1px solid #64ffda;
+    border: 1px solid var(--shinny);
     border-radius: 4px;
     padding: 1.25rem 1.75rem;
     font-size: var(--fz-sm);
@@ -354,7 +348,7 @@ $text-color: #fff;
   button {
     color: var(--lightest-slate);
     background-color: transparent;
-    border: 1px solid var(--lightest-slate);
+    border: 1px solid var(--shinny);
     border-radius: var(--border-radius);
     font-size: var(--fz-xs);
     font-family: var(--font-mono);

@@ -49,7 +49,9 @@ const Home: React.FC = () => {
         </div>
         <div className={'right'}>
           <div className="email">
-            <a href="#">Damoon.darvishi@gmail.com</a>
+            <a href="mailto:damoon.darvishi@gmail.com?subject=Hello&body=I love your portfolio site 🥰, I will be happy to work with you 🤝">
+              Damoon.darvishi@gmail.com
+            </a>
           </div>
         </div>
         <div id="content">

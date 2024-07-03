@@ -27,6 +27,15 @@ a {
   box-sizing: border-box;
 }
 
+%center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
 $main-color: #164a41;
 $bg-green-700: #4d774e;
 $bg-green-500: #9dc88d;
@@ -64,4 +73,9 @@ $text-color-shinny: #9cf1ff;
   --shinny: #9cf1ff;
   --slate: #8892b0;
   --lightest-slate: #ccd6f6;
+
+  --main-color-hue: 217;
+  --main-color: hsla(var(--main-color-hue), 97%, 61%, 1);
+  --black: #222;
+  --red: #ed6b5f;
 }

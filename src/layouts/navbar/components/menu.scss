@@ -1,11 +1,22 @@
 .menu {
-    display: flex;
-    li {
-        padding: 5px 10px;
-        button {
-            border: 1px solid var(--light-slate);
-            padding: 0px 10px;
-            border-radius: 5px;
-        }
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--lightest-slate);
+  li {
+    padding: 5px 10px;
+    button {
+      color: var(--lightest-slate);
+      background-color: transparent;
+      border: 1px solid var(--shinny);
+      border-radius: var(--border-radius);
+      font-size: var(--fz-xs);
+      font-family: var(--font-mono);
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+      padding: 0.8rem 1.5rem;
     }
+  }
 }
