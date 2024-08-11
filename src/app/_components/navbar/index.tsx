@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import logo from '../../assets/logo.png'
+import logo from '@/assets/logo.png'
 import Menu from './components/menu'
+import './_navbar.scss'
 
 function Navbar() {
   return (

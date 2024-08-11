@@ -1,7 +1,7 @@
+import Link from 'next/link'
 import React from 'react'
-type Props = {}
 
-export default function NotFound({}: Props) {
+export default function NotFound() {
   return (
     <div>
       <div id="background"></div>
@@ -40,7 +40,7 @@ export default function NotFound({}: Props) {
 
         <footer>
           <p>
-            made by <a href="https://codepen.io/juliepark"> julie</a> ♡
+            made by <Link href="https://codepen.io/juliepark"> julie</Link> ♡
           </p>
         </footer>
       </div>

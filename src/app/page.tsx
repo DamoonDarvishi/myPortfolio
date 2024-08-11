@@ -1,6 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
-import Navbar from '../layouts/navbar'
+import Link from 'next/link'
+import type { Metadata } from 'next'
+
+import Navbar from './_components/navbar'
+import { About } from './_components/about'
+import { HeroSection } from './_components/herosection'
 import {
   IconCodepen,
   IconFolderIcon,
@@ -9,124 +13,59 @@ import {
   IconLinkIcon,
   IconLinkedin,
   IconTwitter,
-} from '../components/icons/icons'
+} from '../components/icons'
+
+export const metadata: Metadata = {
+  title: 'Portfolio | Damoon Darvishi',
+}
 
 const Home: React.FC = () => {
   return (
-    <div className={'root'}>
-      <div className={'container'}>
+    <div className="root">
+      <div className="container">
         <header className="nav-header">
           <Navbar />
         </header>
-        <div className={'left'}>
+        <div className="left">
           <ul>
             <li>
-              <a href="https://github.com/DamoonDarvishi">
+              <Link href="https://github.com/DamoonDarvishi">
                 <IconGithub />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link href="#">
                 <IconInstagram />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link href="#">
                 <IconTwitter />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/damoon-darvishi-react-developer/">
+              <Link href="https://www.linkedin.com/in/damoon-darvishi-react-developer/">
                 <IconLinkedin />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link href="#">
                 <IconCodepen />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
-        <div className={'right'}>
+        <div className="right">
           <div className="email">
-            <a href="mailto:damoon.darvishi@gmail.com?subject=Hello&body=I love your portfolio site 🥰, I will be happy to work with you 🤝">
+            <Link href="mailto:damoon.darvishi@gmail.com?subject=Hello&body=I love your portfolio site 🥰, I will be happy to work with you 🤝">
               Damoon.darvishi@gmail.com
-            </a>
+            </Link>
           </div>
         </div>
         <div id="content">
-          <main className={'main-container'}>
-            <section className={'hero'}>
-              <div>
-                <h1>Hi, my name is</h1>
-              </div>
-              <div>
-                <h2>Damoon Darvishi</h2>
-              </div>
-              <div>
-                <h3>I build things for the web.</h3>
-              </div>
-              <div>
-                <p>
-                  I’m a software engineer specializing in building (and
-                  occasionally designing) exceptional digital experiences.
-                  Currently, I’m focused on building accessible, human-centered
-                  products at Selected Group.
-                </p>
-              </div>
-              <div>
-                <a href="#">Check out my resume!</a>
-              </div>
-            </section>
-            <section id="about" className={'about'}>
-              <h2>About Me</h2>
-              <div className="inner">
-                <div className="inner-about">
-                  <div className="about-content">
-                    <p>
-                      Hello! My name is Brittany and I enjoy creating things
-                      that live on the internet. My interest in web development
-                      started back in 2012 when I decided to try editing custom
-                      Tumblr themes — turns out hacking together a custom reblog
-                      button taught me a lot about HTML & CSS!
-                    </p>
-                    <p>
-                      Fast-forward to today, and I’ve had the privilege of
-                      working at an advertising agency, a start-up, a huge
-                      corporation, and a student-led design studio. My main
-                      focus these days is building accessible, inclusive
-                      products and digital experiences at Upstatement for a
-                      variety of clients.
-                    </p>
-                    <p>
-                      I also recently launched a course that covers everything
-                      you need to build a web app with the Spotify API using
-                      Node & React.
-                    </p>
-                    <p>
-                      Here are a few technologies I’ve been working with
-                      recently:
-                    </p>
-                  </div>
-                  <ul className="skills-list">
-                    <li>JavaScript (ES6+)</li>
-                    <li>TypeScript</li>
-                    <li>React</li>
-                    <li>Eleventy</li>
-                    <li>Node.js</li>
-                    <li>WordPress</li>
-                  </ul>
-                </div>
-                <div className="inner-picture">
-                  <Image
-                    src="https://picsum.photos/200/300"
-                    width={300}
-                    height={300}
-                    alt="pic"
-                  />
-                </div>
-              </div>
-            </section>
+          <main className="main-container">
+            <HeroSection />
+            <About />
             <section id="jobs" className="jobs">
               <h2>Where I’ve Worked</h2>
             </section>
@@ -135,9 +74,9 @@ const Home: React.FC = () => {
             </section>
             <section className="noteworthy-projects">
               <h2>Other Noteworthy Projects</h2>
-              <a className="archive-project" href="#">
+              <Link className="archive-project" href="#">
                 view the archive
-              </a>
+              </Link>
               <ul className="ul-project">
                 <li>
                   <div className="project-inner">
@@ -147,18 +86,18 @@ const Home: React.FC = () => {
                           <IconFolderIcon />
                         </div>
                         <div className="project-links">
-                          <a href="#">
+                          <Link href="#">
                             <IconGithub />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <IconLinkIcon />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <h3 className="project-title">
-                        <a className="project-title-link" href="#">
+                        <Link className="project-title-link" href="#">
                           Integrating Algolia Search with WordPress Multisite
-                        </a>
+                        </Link>
                       </h3>
                       <div className="project-description">
                         <p>
@@ -184,18 +123,18 @@ const Home: React.FC = () => {
                           <IconFolderIcon />
                         </div>
                         <div className="project-links">
-                          <a href="#">
+                          <Link href="#">
                             <IconGithub />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <IconLinkIcon width={24} height={24} />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <h3 className="project-title">
-                        <a className="project-title-link" href="#">
+                        <Link className="project-title-link" href="#">
                           Integrating Algolia Search with WordPress Multisite
-                        </a>
+                        </Link>
                       </h3>
                       <div className="project-description">
                         <p>
@@ -221,18 +160,18 @@ const Home: React.FC = () => {
                           <IconFolderIcon />
                         </div>
                         <div className="project-links">
-                          <a href="#">
+                          <Link href="#">
                             <IconGithub />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <IconLinkIcon />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <h3 className="project-title">
-                        <a className="project-title-link" href="#">
+                        <Link className="project-title-link" href="#">
                           Integrating Algolia Search with WordPress Multisite
-                        </a>
+                        </Link>
                       </h3>
                       <div className="project-description">
                         <p>
@@ -258,18 +197,18 @@ const Home: React.FC = () => {
                           <IconFolderIcon />
                         </div>
                         <div className="project-links">
-                          <a href="#">
+                          <Link href="#">
                             <IconGithub />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <IconLinkIcon />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <h3 className="project-title">
-                        <a className="project-title-link" href="#">
+                        <Link className="project-title-link" href="#">
                           Integrating Algolia Search with WordPress Multisite
-                        </a>
+                        </Link>
                       </h3>
                       <div className="project-description">
                         <p>
@@ -295,18 +234,18 @@ const Home: React.FC = () => {
                           <IconFolderIcon />
                         </div>
                         <div className="project-links">
-                          <a href="#">
+                          <Link href="#">
                             <IconGithub />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <IconLinkIcon />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <h3 className="project-title">
-                        <a className="project-title-link" href="#">
+                        <Link className="project-title-link" href="#">
                           Integrating Algolia Search with WordPress Multisite
-                        </a>
+                        </Link>
                       </h3>
                       <div className="project-description">
                         <p>
@@ -332,18 +271,18 @@ const Home: React.FC = () => {
                           <IconFolderIcon />
                         </div>
                         <div className="project-links">
-                          <a href="#">
+                          <Link href="#">
                             <IconGithub />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <IconLinkIcon />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <h3 className="project-title">
-                        <a className="project-title-link" href="#">
+                        <Link className="project-title-link" href="#">
                           Integrating Algolia Search with WordPress Multisite
-                        </a>
+                        </Link>
                       </h3>
                       <div className="project-description">
                         <p>
@@ -372,12 +311,12 @@ const Home: React.FC = () => {
                 inbox is always open. Whether you have a question or just want
                 to say hi, I’ll try my best to get back to you!
               </p>
-              <a className="email-link" href="#">
+              <Link className="email-link" href="#">
                 Say Hello
-              </a>
+              </Link>
             </section>
           </main>
-          <footer className={'footer'}>Footer</footer>
+          <footer className="footer">Footer</footer>
         </div>
       </div>
     </div>

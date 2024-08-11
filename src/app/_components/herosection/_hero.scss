@@ -1,0 +1,95 @@
+.hero {
+  // max-width: 1000px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+  &_info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    line-height: 2;
+    h1 {
+      color: var(--shinny);
+      font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+      word-spacing: 3px;
+      margin-left: 8px;
+    }
+    h2 {
+      color: var(--lightest-slate);
+      font-size: clamp(20px, 8vw, 40px);
+    }
+    h3 {
+      color: var(--slate);
+      font-size: clamp(20px, 8vw, 30px);
+    }
+    p {
+      color: var(--slate);
+      margin: 20px 0px;
+      max-width: 540px;
+      line-height: 0.9;
+    }
+    .link {
+      color: var(--lightest-slate);
+      &-btn {
+        width: fit-content;
+        color: var(--lightest-slate);
+        background-color: transparent;
+        border: 1px solid var(--shinny);
+        border-radius: var(--border-radius);
+        font-size: var(--fz-xs);
+        font-family: var(--font-mono);
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+        padding: 0.8rem 1.5rem;
+        &:hover,
+        &:focus {
+          color: var(--shinny);
+        }
+      }
+    }
+  }
+
+  &_photo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    &-bg {
+      width: 300px;
+      height: 300px;
+      // background-color: var(--shinny);
+      background: linear-gradient(
+        337deg,
+        rgba(1, 234, 103, 1) 0%,
+        rgba(6, 142, 204, 1) 100%
+      );
+      background-size: 100% 100%;
+      animation: bg 15s linear infinite;
+      border-top-left-radius: 100%;
+      border-top-right-radius: 90%;
+      // border-bottom-left-radius: 70%;
+      border-bottom-right-radius: 40%;
+      overflow: hidden;
+      margin: 0px auto;
+      &-img {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../assets/new-photo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
