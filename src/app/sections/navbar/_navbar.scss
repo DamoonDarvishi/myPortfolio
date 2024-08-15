@@ -8,6 +8,9 @@
   width: 100%;
   counter-reset: item 0;
   z-index: 12;
+  .logo {
+    color: #2b4a38 !important;
+  }
   .menu {
     display: flex;
     align-items: center;

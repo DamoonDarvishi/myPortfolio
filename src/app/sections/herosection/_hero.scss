@@ -16,8 +16,8 @@
     justify-content: center;
     line-height: 2;
     h1 {
-      color: var(--shinny);
-      font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+      color: var(--green);
+      font-size: clamp(var(--fz-xl), 5vw, var(--fz-xxl));
       word-spacing: 3px;
       margin-left: 8px;
     }
@@ -33,7 +33,6 @@
       color: var(--slate);
       margin: 20px 0px;
       max-width: 540px;
-      line-height: 0.9;
     }
     .link {
       color: var(--lightest-slate);
@@ -41,18 +40,17 @@
         width: fit-content;
         color: var(--lightest-slate);
         background-color: transparent;
-        border: 1px solid var(--shinny);
+        border: 1px solid var(--green);
         border-radius: var(--border-radius);
         font-size: var(--fz-xs);
         font-family: var(--font-mono);
-        line-height: 1;
         text-decoration: none;
         cursor: pointer;
         transition: var(--transition);
         padding: 0.8rem 1.5rem;
         &:hover,
         &:focus {
-          color: var(--shinny);
+          color: var(--green);
         }
       }
     }

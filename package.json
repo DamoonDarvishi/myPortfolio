@@ -11,7 +11,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "framer-motion": "^7.5.4",
+    "framer-motion": "^7.10.3",
     "gsap": "^3.11.1",
     "mouse-follower": "^1.1.2",
     "next": "^14.2.4",
@@ -19,15 +19,11 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
-    "gulp": "^5.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-replace": "^1.1.4",
-    "gulp-svgmin": "^4.1.0",
-    "gulp-wrap": "^0.15.0",
     "prettier": "^2.7.1",
     "sass": "^1.55.0",
     "typescript": "4.8.4"

@@ -1,6 +1,6 @@
-import './globals.scss'
-import '../styles/Home.scss'
 import { Fira_Code } from 'next/font/google'
+import '@/scss/globals.scss'
+import '@/scss/index.scss'
 
 const fira = Fira_Code({
   display: 'swap',

@@ -2,18 +2,17 @@ import React from 'react'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
-import Navbar from './_components/navbar'
-import { About } from './_components/about'
-import { HeroSection } from './_components/herosection'
-import {
-  IconCodepen,
-  IconFolderIcon,
-  IconGithub,
-  IconInstagram,
-  IconLinkIcon,
-  IconLinkedin,
-  IconTwitter,
-} from '../components/icons'
+import { Navbar } from './sections/navbar'
+import { About } from './sections/about'
+import { HeroSection } from './sections/herosection'
+import FolderIcon from '@/assets/icons/folder-icon.svg'
+import GithubIcon from '@/assets/icons/github.svg'
+import LinkIcon from '@/assets/icons/link-icon.svg'
+import InstagramIcon from '@/assets/icons/instagram.svg'
+import TwitterIcon from '@/assets/icons/twitter.svg'
+import LinkedinIcon from '@/assets/icons/linkedin.svg'
+import CodepenIcon from '@/assets/icons/codepen.svg'
+import { Experience } from './sections/experience'
 
 export const metadata: Metadata = {
   title: 'Portfolio | Damoon Darvishi',
@@ -30,27 +29,27 @@ const Home: React.FC = () => {
           <ul>
             <li>
               <Link href="https://github.com/DamoonDarvishi">
-                <IconGithub />
+                <GithubIcon width={24} height={24} />
               </Link>
             </li>
             <li>
               <Link href="#">
-                <IconInstagram />
+                <InstagramIcon width={24} height={24} />
               </Link>
             </li>
             <li>
               <Link href="#">
-                <IconTwitter />
+                <TwitterIcon width={24} height={24} />
               </Link>
             </li>
             <li>
               <Link href="https://www.linkedin.com/in/damoon-darvishi-react-developer/">
-                <IconLinkedin />
+                <LinkedinIcon width={24} height={24} />
               </Link>
             </li>
             <li>
               <Link href="#">
-                <IconCodepen />
+                <CodepenIcon width={24} height={24} />
               </Link>
             </li>
           </ul>
@@ -66,6 +65,7 @@ const Home: React.FC = () => {
           <main className="main-container">
             <HeroSection />
             <About />
+            <Experience />
             <section id="jobs" className="jobs">
               <h2>Where I’ve Worked</h2>
             </section>
@@ -83,14 +83,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <IconFolderIcon />
+                          <FolderIcon width={24} height={24} />
                         </div>
                         <div className="project-links">
                           <Link href="#">
-                            <IconGithub />
+                            <GithubIcon width={24} height={24} />
                           </Link>
                           <Link href="#">
-                            <IconLinkIcon />
+                            <LinkIcon width={24} height={24} />
                           </Link>
                         </div>
                       </div>
@@ -120,14 +120,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <IconFolderIcon />
+                          <FolderIcon width={24} height={24} />
                         </div>
                         <div className="project-links">
                           <Link href="#">
-                            <IconGithub />
+                            <GithubIcon width={24} height={24} />
                           </Link>
                           <Link href="#">
-                            <IconLinkIcon width={24} height={24} />
+                            <LinkIcon width={24} height={24} />
                           </Link>
                         </div>
                       </div>
@@ -157,14 +157,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <IconFolderIcon />
+                          <FolderIcon width={24} height={24} />
                         </div>
                         <div className="project-links">
                           <Link href="#">
-                            <IconGithub />
+                            <GithubIcon width={24} height={24} />
                           </Link>
                           <Link href="#">
-                            <IconLinkIcon />
+                            <LinkIcon width={24} height={24} />
                           </Link>
                         </div>
                       </div>
@@ -194,14 +194,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <IconFolderIcon />
+                          <FolderIcon width={24} height={24} />
                         </div>
                         <div className="project-links">
                           <Link href="#">
-                            <IconGithub />
+                            <GithubIcon width={24} height={24} />
                           </Link>
                           <Link href="#">
-                            <IconLinkIcon />
+                            <LinkIcon width={24} height={24} />
                           </Link>
                         </div>
                       </div>
@@ -231,14 +231,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <IconFolderIcon />
+                          <FolderIcon width={24} height={24} />
                         </div>
                         <div className="project-links">
                           <Link href="#">
-                            <IconGithub />
+                            <GithubIcon width={24} height={24} />
                           </Link>
                           <Link href="#">
-                            <IconLinkIcon />
+                            <LinkIcon width={24} height={24} />
                           </Link>
                         </div>
                       </div>
@@ -268,14 +268,14 @@ const Home: React.FC = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <IconFolderIcon />
+                          <FolderIcon width={24} height={24} />
                         </div>
                         <div className="project-links">
                           <Link href="#">
-                            <IconGithub />
+                            <GithubIcon width={24} height={24} />
                           </Link>
                           <Link href="#">
-                            <IconLinkIcon />
+                            <LinkIcon width={24} height={24} />
                           </Link>
                         </div>
                       </div>
