@@ -18,7 +18,7 @@ function Experience() {
   const expereinces = [
     {
       name: 'Rapidops',
-      role: 'Full Stack Developer',
+      role: 'Frontend Developer',
       url: 'https://www.rapidops.com',
       start: 'January 2021',
       end: 'Present',

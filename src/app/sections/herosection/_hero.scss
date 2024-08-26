@@ -15,7 +15,7 @@
     height: 70vh;
     justify-content: center;
     line-height: 2;
-    h1 {
+    .say-hello {
       color: var(--green);
       font-size: clamp(var(--fz-xl), 5vw, var(--fz-xxl));
       word-spacing: 3px;

@@ -44,6 +44,13 @@ $text-color-shinny: #9cf1ff;
     --main-color: hsla(var(--main-color-hue), 97%, 61%, 1);
     --black: #222;
     --red: #ed6b5f;
+
+    // gradients
+    --green-slate: linear-gradient(
+      337deg,
+      rgba(1, 234, 103, 1) 0%,
+      rgba(6, 142, 204, 1) 100%
+    );
   }
 }
 
@@ -82,4 +89,16 @@ $text-color-shinny: #9cf1ff;
     right: 0;
     margin: auto;
   }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
 }

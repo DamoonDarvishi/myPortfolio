@@ -7,9 +7,10 @@ export function HeroSection() {
   return (
     <section className="hero">
       <div className="hero_info">
-        <h1>
-          Hello <HandIcon width={32} height={32} />
-        </h1>
+        <div>
+          <span className="say-hello">Hello</span>
+          <HandIcon width={32} height={32} />
+        </div>
         <h2>I&apos;m Damoon</h2>
         <h3>Front-end Developer</h3>
         <Link className="link-btn" href="#">

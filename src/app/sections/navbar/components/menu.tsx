@@ -3,24 +3,24 @@ import './_menu.scss'
 
 const Menu = () => {
   return (
-    <ol className={'menu'}>
+    <ol className="menu">
       <li>
-        <Link className={'link active'} href="#about">
+        <Link className="link active" href="#about">
           About
         </Link>
       </li>
       <li>
-        <Link className={'link active'} href="#jobs">
+        <Link className="link active" href="#jobs">
           Exprience
         </Link>
       </li>
       <li>
-        <Link className={'link active'} href="#projects">
+        <Link className="link active" href="#projects">
           Work
         </Link>
       </li>
       <li>
-        <Link className={'link active'} href="#contact">
+        <Link className="link active" href="#contact">
           Contact
         </Link>
       </li>

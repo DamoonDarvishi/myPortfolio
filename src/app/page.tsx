@@ -13,6 +13,8 @@ import TwitterIcon from '@/assets/icons/twitter.svg'
 import LinkedinIcon from '@/assets/icons/linkedin.svg'
 import CodepenIcon from '@/assets/icons/codepen.svg'
 import { Experience } from './sections/experience'
+import Projects from './sections/projects/Projects'
+import Contact from './sections/contact/Contact'
 
 export const metadata: Metadata = {
   title: 'Portfolio | Damoon Darvishi',
@@ -22,9 +24,7 @@ const Home: React.FC = () => {
   return (
     <div className="root">
       <div className="container">
-        <header className="nav-header">
-          <Navbar />
-        </header>
+        <Navbar />
         <div className="left">
           <ul>
             <li>
@@ -66,6 +66,8 @@ const Home: React.FC = () => {
             <HeroSection />
             <About />
             <Experience />
+            <Projects />
+            <Contact />
             <section id="jobs" className="jobs">
               <h2>Where I’ve Worked</h2>
             </section>
