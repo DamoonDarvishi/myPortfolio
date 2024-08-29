@@ -50,7 +50,7 @@
           transition: var(--transition);
           &:hover,
           &:focus {
-            color: var(--shinny);
+            color: var(--green);
             scale: 1.1;
           }
         }
@@ -90,7 +90,7 @@
         writing-mode: vertical-rl;
         &:hover,
         &:focus {
-          color: var(--shinny);
+          color: var(--green);
           scale: 1.1;
         }
       }
@@ -109,8 +109,8 @@
 .main-container {
   padding: 0 150px;
   section {
-    margin: 0px auto 100px;
-    padding: 100px 0px;
+    // margin: 0px auto 100px;
+    // padding: 100px 0px;
   }
 }
 
@@ -158,16 +158,16 @@
     @extend .section-title;
   }
 }
-.projects {
-  margin: 0px auto;
-  padding: 100px 0px;
-  max-width: 1000px;
-  height: 100vh;
-  h2 {
-    --count: 3;
-    @extend .section-title;
-  }
-}
+// .projects {
+//   margin: 0px auto;
+//   padding: 100px 0px;
+//   max-width: 1000px;
+//   height: 100vh;
+//   h2 {
+//     --count: 3;
+//     @extend .section-title;
+//   }
+// }
 
 .contact {
   max-width: 600px;

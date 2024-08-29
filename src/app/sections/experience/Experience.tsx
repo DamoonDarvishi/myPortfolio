@@ -17,11 +17,11 @@ function Experience() {
 
   const expereinces = [
     {
-      name: 'Rapidops',
+      name: 'Selected Geeks',
       role: 'Frontend Developer',
-      url: 'https://www.rapidops.com',
-      start: 'January 2021',
-      end: 'Present',
+      url: 'https://www.selectedgeeks.com',
+      start: 'January 2020',
+      end: 'December 2023',
       shortDescription: [
         'I had experience working on a large codebase utilizing Kibana and Elasticsearch.',
         "Throughout my work, I've utilized various MERN stack technologies, including React, Redux, TypeScript, Node.js, Hapi, and Elasticsearch, among others.",
@@ -30,8 +30,8 @@ function Experience() {
       ],
     },
     {
-      name: 'Youtube',
-      role: 'Content Creator',
+      name: 'IranKarako',
+      role: 'Frontend Developer',
       url: 'https://www.youtube.com/kishansheth21',
       start: 'April 2021',
       end: 'Present',
@@ -42,19 +42,19 @@ function Experience() {
       ],
     },
     {
-      name: 'ACES',
-      role: 'President',
-      url: 'https://www.linkedin.com/company/association-of-computer-engineering-students/',
-      start: 'November 2019',
-      end: 'November 2020',
+      name: 'Freelancer',
+      role: 'Frontend Developer',
+      url: 'https://myPortfolio.com',
+      start: 'March 2024',
+      end: 'Present',
       shortDescription: [
-        'As the elected President of the ACES Departmental Club, I successfully led a team of board members and executive committee members to organize and execute multiple events throughout the year.',
-        'Additionally, I secured sponsorships from reputable brands to support our events.',
-        'Overall, it was a rewarding experience that allowed me to develop my leadership skills while contributing positively to the growth of the organization.',
+        'As a Freelancer I have worked on various projects and contributed to them.',
+        'Additionally, I have developed and shared over 5 projects using React and NextJs.',
+        'Overall, I have gained a substantial following, with over 1,000 subscribers to date.',
       ],
     },
     {
-      name: 'ISTE',
+      name: 'Learn German',
       role: 'Web Developer',
       url: 'https://www.linkedin.com/company/association-of-computer-engineering-students/',
       start: 'November 2019',
@@ -66,14 +66,14 @@ function Experience() {
       ],
     },
     {
-      name: 'Shashaan',
+      name: 'Antik-plus',
       role: 'Founder',
-      url: 'https://www.linkedin.com/company/association-of-computer-engineering-students/',
-      start: 'November 2018',
-      end: 'November 2021',
+      url: 'https://www.Antik-plus.com/',
+      start: 'November 2024',
+      end: 'Present',
       shortDescription: [
-        'While still a student, I founded a web hosting company that offered affordable hosting services.',
-        'With over 300 customers, the business thrived until I graduated and sold it to another company.',
+        'I founder of Antik-plus, it is a e-commerce store where customers can buy products .',
+        'With over 1000 products on sale, and a large number of clients.',
       ],
     },
   ]

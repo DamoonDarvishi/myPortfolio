@@ -5,11 +5,12 @@ import Link from 'next/link'
 import GithubIcon from '../../../assets/icons/github.svg'
 import LinkIcon from '../../../assets/icons/link-icon.svg'
 import { motion } from 'framer-motion'
+import projectImg from '@/assets/classbon.png'
 import './_projects.scss'
 
 const projectsData = [
   {
-    image: '/project1.png',
+    image: { projectImg },
     projectName: 'Pokedex',
     //   projectLink: 'https://netlify.com',
     projectDescription:
@@ -28,7 +29,7 @@ const projectsData = [
     },
   },
   {
-    image: '/project2.png',
+    image: { projectImg },
     projectName: 'Realtime Chat App',
     //   projectLink: 'https://netlify.com',
     projectDescription:
@@ -47,7 +48,7 @@ const projectsData = [
     },
   },
   {
-    image: '/project3.png',
+    image: { projectImg },
     projectName: 'Netflix App',
     //   projectLink: 'https://netlify.com',
     projectDescription:
@@ -74,6 +75,7 @@ function Projects() {
         className="title"
         initial="hidden"
         whileInView="visible"
+        id="work"
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         variants={{
@@ -109,7 +111,13 @@ function Projects() {
                 <div className="project-image">
                   <div className="project-image-overlay"></div>
                   <div className="project-image-container">
-                    <Image src={image} fill alt={projectName} quality={100} />
+                    <Image
+                      src={image as any}
+                      width={400}
+                      height={400}
+                      alt={projectName}
+                      quality={100}
+                    />
                   </div>
                 </div>
                 <div className="project-info">

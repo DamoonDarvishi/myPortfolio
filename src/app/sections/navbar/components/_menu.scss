@@ -10,7 +10,7 @@
       &-btn {
         color: var(--lightest-slate);
         background-color: transparent;
-        border: 1px solid var(--shinny);
+        border: 1px solid var(--green);
         border-radius: var(--border-radius);
         font-size: var(--fz-xs);
         font-family: var(--font-mono);
@@ -21,7 +21,7 @@
         padding: 0.8rem 1.5rem;
         &:hover,
         &:focus {
-          color: var(--shinny);
+          color: var(--green);
         }
       }
     }
