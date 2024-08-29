@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import photo from '../../../assets/new-photo.png'
 import { useInView, motion } from 'framer-motion'
 import './_about.scss'
 
@@ -30,48 +30,22 @@ export function About() {
       <div className="about-grid">
         <div className="about-grid-info">
           <p className="about-grid-info-text">
-            Bonjour! My name is Kishan, and I am passionate about creating
-            digital content for the web. My interest in web development was
-            sparked in 2016 when I created my first project called Lavish, a
-            social media app built using React and Node.js.
+            Hello and welcome to my Portfolio! My name is Damoon, and I am a
+            frontend developer passionate about building innovative solutions to
+            complex problems. I&apos;m living now in Munich, Germany.
           </p>
           <p className="about-grid-info-text">
-            Fast-forward to today, I specialize in designing and developing
-            high-quality solutions that delight our clients and exceed their
-            expectations at{' '}
-            <Link href="https://rapidops.com" className="link" target="_blank">
-              Rapidops.
-            </Link>
-          </p>
-
-          <p className="about-grid-info-text">
-            Additionally, I share my knowledge and passion with the world
-            through my YouTube channel, where I demonstrate how to build
-            full-stack applications.
-          </p>
-          <p className="about-grid-info-text">
-            I am also working on a new project called&nbsp;
-            <Link
-              className="link"
-              target="_blank"
-              href="https://frontendvita.com"
-            >
-              FrontendVita,
-            </Link>
-            &nbsp;aimed at enhancing frontend development skills.
-          </p>
-          <p className="about-grid-info-text">
-            Here are a few technologies I’ve been working with recently:
+            Here are a few technologies I&apos;ve been working with recently:
           </p>
           <ul className="about-grid-info-list">
-            <li className="about-grid-info-list-item">React</li>
-            <li className="about-grid-info-list-item">React Native</li>
-            <li className="about-grid-info-list-item">Next.js</li>
+            <li className="about-grid-info-list-item">Javascript</li>
+            <li className="about-grid-info-list-item">ReactJs</li>
+            <li className="about-grid-info-list-item">NextJs</li>
             <li className="about-grid-info-list-item">Typescript</li>
             <li className="about-grid-info-list-item">Redux Toolkit</li>
-            <li className="about-grid-info-list-item">Node.js</li>
-            <li className="about-grid-info-list-item">Elasticsearch</li>
-            <li className="about-grid-info-list-item">Kibana</li>
+            <li className="about-grid-info-list-item">Zustand</li>
+            <li className="about-grid-info-list-item">Rest API</li>
+            <li className="about-grid-info-list-item">Git & Github</li>
             <li className="about-grid-info-list-item">CSS</li>
           </ul>
         </div>
@@ -79,7 +53,7 @@ export function About() {
           <div className="overlay"></div>
           <div className="overlay-border"></div>
           <div className="about-grid-photo-container">
-            <Image src="/kishan.jpeg" alt="profile" fill />
+            <Image src={photo} fill alt="profile" />
           </div>
         </div>
       </div>
