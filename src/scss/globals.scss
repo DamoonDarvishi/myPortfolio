@@ -1,12 +1,5 @@
 @layer reset, base, components, utilities;
 
-$main-color: #164a41;
-$bg-green-700: #4d774e;
-$bg-green-500: #9dc88d;
-$bg-orange-500: #f1b24a;
-$text-color: #fff;
-$text-color-shinny: #9cf1ff;
-
 @layer base {
   :root {
     // size
@@ -30,20 +23,13 @@ $text-color-shinny: #9cf1ff;
     // bg colors
     --dark-green: #164a41;
     --light-green: #4d774e;
-    --lightest-green: #9dc88d;
-    --light-orange: #f1b24a;
-    --light-slate: #a8b2d1;
-
+    --dark-green-shadow: #0808081c;
     // text colors
-    --shinny: #9cf1ff;
     --slate: #8892b0;
     --lightest-slate: #ccd6f6;
+    --light-slate: #a8b2d1;
     --green: #01ea67;
-
-    --main-color-hue: 217;
-    --main-color: hsla(var(--main-color-hue), 97%, 61%, 1);
-    --black: #222;
-    --red: #ed6b5f;
+    --shadow-green: #01ea676e;
 
     // gradients
     --green-slate: linear-gradient(
