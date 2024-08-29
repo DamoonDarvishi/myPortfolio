@@ -3,6 +3,7 @@ import React from 'react'
 import Button from '@/components/button/Button'
 import { motion } from 'framer-motion'
 import './_contact.scss'
+
 function Contact() {
   return (
     <motion.div
@@ -24,9 +25,7 @@ function Contact() {
         is always open. Whether you have a question or just want to say hi, I’ll
         try my best to get back to you!
       </p>
-      <div className="contact-cta">
-        <Button link="mailto:kishansheth21@gmail.com" text="Say Hello" />
-      </div>
+      <Button link="mailto:kishansheth21@gmail.com" text="Say Hello" />
     </motion.div>
   )
 }
