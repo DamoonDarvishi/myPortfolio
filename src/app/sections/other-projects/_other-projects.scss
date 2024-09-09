@@ -76,3 +76,12 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .other-projects {
+    padding: 20px;
+    .ul-project {
+      grid-template-columns: 1fr;
+    }
+  }
+}

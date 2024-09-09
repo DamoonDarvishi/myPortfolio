@@ -14,6 +14,7 @@ import { Experience } from './sections/experience'
 import Projects from './sections/projects/Projects'
 import Contact from './sections/contact/Contact'
 import OtherProjects from './sections/other-projects/OtherProjects'
+import Menu from './sections/navbar/components/menu'
 
 export const metadata: Metadata = {
   title: 'Portfolio | Damoon Darvishi',
@@ -23,7 +24,8 @@ const Home: React.FC = () => {
   return (
     <div className="root">
       <div className="container">
-        <Navbar />
+        {/* <Navbar /> */}
+        <Menu />
         <div className="left">
           <ul>
             <li>
