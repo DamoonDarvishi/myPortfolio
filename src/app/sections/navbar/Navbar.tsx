@@ -30,29 +30,29 @@ function Navbar() {
     })
   }, [])
 
-  useEffect(() => {
-    const links = document.querySelectorAll('.nav-items-list-item-link')
-    links.forEach((link) => {
-      link.addEventListener('click', () => setResponsiveNavVisible(false))
-    })
-    const nav = document.querySelector('.nav-items')
-    nav?.addEventListener('click', (e) => {
-      e.stopPropagation()
-    })
-    const html = document.querySelector('html')
-    html?.addEventListener('click', (e) => {
-      setResponsiveNavVisible(false)
-    })
-  }, [])
+  // useEffect(() => {
+  //   const links = document.querySelectorAll('.nav-items-list-item-link')
+  //   links.forEach((link) => {
+  //     link.addEventListener('click', () => setResponsiveNavVisible(false))
+  //   })
+  //   const nav = document.querySelector('.nav-items')
+  //   nav?.addEventListener('click', (e) => {
+  //     e.stopPropagation()
+  //   })
+  //   const html = document.querySelector('html')
+  //   html?.addEventListener('click', (e) => {
+  //     setResponsiveNavVisible(false)
+  //   })
+  // }, [])
 
-  useEffect(() => {
-    const main = document.querySelector('main')
-    if (responsiveNavVisible) {
-      main?.classList.add('blur')
-    } else {
-      main?.classList.remove('blur')
-    }
-  }, [responsiveNavVisible])
+  // useEffect(() => {
+  //   const main = document.querySelector('main')
+  //   if (responsiveNavVisible) {
+  //     main?.classList.add('blur')
+  //   } else {
+  //     main?.classList.remove('blur')
+  //   }
+  // }, [responsiveNavVisible])
 
   return (
     <nav>
@@ -70,7 +70,7 @@ function Navbar() {
             <Logo width={60} height={60} />
           </Link>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           className="nav-responsive-toggle"
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ function Navbar() {
               }}
             />
           )}
-        </motion.div>
+        </motion.div> */}
         <div
           className={`${responsiveNavVisible && 'nav-responsive'} nav-items`}
         >

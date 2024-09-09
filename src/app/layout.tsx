@@ -21,8 +21,9 @@ export default function RootLayout({
 
   const handleLoaderLoaded = () => {
     setIsLoading(false)
-    setTimeout(() => setShowContent(true), 450)
+    setTimeout(() => setShowContent(true), 400)
   }
+
   return (
     <html lang="en" className={fira.variable}>
       <body>
