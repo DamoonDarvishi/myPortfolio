@@ -11,9 +11,9 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
+import logoSelectedGeeks from '@/images/logos/selectedgeeks.png'
 import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoReqter from '@/images/logos/reqter.png'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -159,7 +159,12 @@ function Role({ role }: { role: Role }) {
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+        <Image
+          src={role.logo}
+          alt=""
+          className="h-7 w-7 rounded-full"
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -187,35 +192,28 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Reqter',
+      title: 'Frontend Developer',
+      logo: logoReqter,
+      start: 'Jun 2024',
       end: {
-        label: 'Present',
+        label: 'Nov 2024',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Selected Geeks',
+      title: 'Frontend Developer',
+      logo: logoSelectedGeeks,
+      start: 'Jan 2020',
+      end: 'Dec 2023',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'KARAKO',
+      title: 'Internship Frontend Developer',
+      logo: '',
+      start: 'Apr 2019',
+      end: 'Dec 2019',
     },
   ]
 
@@ -276,24 +274,33 @@ export default async function Home() {
             Frontend Developer, UI / UX enthusiast, JavaScript Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          As a Frontend Developer, I bring almost 5 years of experience in JavaScript application development. I specialize in using frameworks like React, and Next.Js, along with foundational HTML, CSS, and JavaScript. Able to develop web applications from scratch, as well as maintain existing ones, and add new features. My focus is on writing clean, scalable code that is easy to maintain and thoroughly tested. I enjoy working with managers, designers, and developers to create great products that are both useful and user-friendly. I am committed to continuous learning and am always eager to explore new technologies and refine existing solutions.
+            As a Frontend Developer, I bring almost 5 years of experience in
+            JavaScript application development. I specialize in using frameworks
+            like React, and Next.Js, along with foundational HTML, CSS, and
+            JavaScript. Able to develop web applications from scratch, as well
+            as maintain existing ones, and add new features. My focus is on
+            writing clean, scalable code that is easy to maintain and thoroughly
+            tested. I enjoy working with managers, designers, and developers to
+            create great products that are both useful and user-friendly. I am
+            committed to continuous learning and am always eager to explore new
+            technologies and refine existing solutions.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
-              href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
+              href="https://www.linkedin.com/in/damoondarvishi/"
+              aria-label="Follow on LinkedIn"
+              icon={LinkedInIcon}
             />
             <SocialLink
               href="https://github.com/DamoonDarvishi"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
+            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
-              href="https://www.linkedin.com/in/damoondarvishi/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
+              href="#"
+              aria-label="Follow on Instagram"
+              icon={InstagramIcon}
             />
           </div>
         </div>

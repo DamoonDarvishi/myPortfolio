@@ -49,8 +49,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'About',
-  description:
-    'Frontend Developer, UI / UX enthusiast, JavaScript Engineer.',
+  description: 'Frontend Developer, UI / UX enthusiast, JavaScript Engineer.',
 }
 
 export default function About() {
@@ -108,18 +107,26 @@ export default function About() {
             <SocialLink href="#" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/DamoonDarvishi"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/damoondarvishi/"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:damoon.darvishi@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              damoon.darvishi@gmail.com
             </SocialLink>
           </ul>
         </div>
