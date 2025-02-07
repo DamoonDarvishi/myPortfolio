@@ -14,7 +14,7 @@ import {
 import logoSelectedGeeks from '@/images/logos/selectedgeeks.png'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoReqter from '@/images/logos/reqter.png'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoKarako from '@/images/logos/karako.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -211,7 +211,7 @@ function Resume() {
     {
       company: 'KARAKO',
       title: 'Internship Frontend Developer',
-      logo: '',
+      logo: logoKarako,
       start: 'Apr 2019',
       end: 'Dec 2019',
     },
