@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/avatar.png'
+import portraitImage from '@/assets/avatar.png'
 
 function SocialLink({
   className,
