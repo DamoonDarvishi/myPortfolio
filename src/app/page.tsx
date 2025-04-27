@@ -16,6 +16,7 @@ import logoReqter from '@/assets/logos/reqter.png'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import Photos from '@/components/Photos'
+import TypewriterEffect from '@/components/TypewriterEffect'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -238,7 +239,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Frontend Developer, UI / UX enthusiast, JavaScript Engineer.
+            I am a <TypewriterEffect />
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             As a Frontend Developer, I bring almost 5 years of experience in
