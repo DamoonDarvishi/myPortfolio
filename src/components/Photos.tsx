@@ -18,7 +18,7 @@ function Photos() {
   })
 
   // Transform scrollY progress to X position
-  const xPos = useTransform(scrollYProgress, [0, 1], ['18%', '-50%'])
+  const xPos = useTransform(scrollYProgress, [0, 1], ['22%', '-50%'])
 
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
