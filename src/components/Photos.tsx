@@ -4,11 +4,11 @@ import { motion, useScroll, useTransform } from 'motion/react'
 import clsx from 'clsx'
 import Image, { type ImageProps } from 'next/image'
 
-import image1 from '@/assets/photos/image-1.jpg'
-import image2 from '@/assets/photos/image-1.jpg'
-import image3 from '@/assets/photos/image-1.jpg'
-import image4 from '@/assets/photos/image-1.jpg'
-import image5 from '@/assets/photos/image-1.jpg'
+import image1 from '@/assets/photos/React-certificate.png'
+import image2 from '@/assets/photos/selected.png'
+import image3 from '@/assets/photos/selectedresort.png'
+import image4 from '@/assets/photos/ukstudy.png'
+import image5 from '@/assets/photos/Typescript-certificate.png'
 
 function Photos() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -18,7 +18,7 @@ function Photos() {
   })
 
   // Transform scrollY progress to X position
-  const xPos = useTransform(scrollYProgress, [0, 1], ['18%', '-50%'])
+  const xPos = useTransform(scrollYProgress, [0, 1], ['22%', '-50%'])
 
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
