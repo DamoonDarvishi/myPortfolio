@@ -4,11 +4,12 @@ import { motion, useScroll, useTransform } from 'motion/react'
 import clsx from 'clsx'
 import Image, { type ImageProps } from 'next/image'
 
-import image1 from '@/assets/photos/React-certificate.png'
-import image2 from '@/assets/photos/selected.png'
-import image3 from '@/assets/photos/selectedresort.png'
-import image4 from '@/assets/photos/ukstudy.png'
-import image5 from '@/assets/photos/Typescript-certificate.png'
+import reactCertificate from '@/assets/photos/React-certificate.png'
+import reactTypescriptCertificate from '@/assets/photos/React-Typescript.png'
+import selected from '@/assets/photos/selected.png'
+import selectedResort from '@/assets/photos/selectedresort.png'
+import typescriptCertificate from '@/assets/photos/Typescript-certificate.png'
+import typeError from '@/assets/photos/Typescript-Errors.png'
 
 function Photos() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -22,7 +23,14 @@ function Photos() {
 
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
-  const images = [image1, image2, image3, image4, image5]
+  const images = [
+    reactTypescriptCertificate,
+    reactCertificate,
+    typescriptCertificate,
+    selected,
+    typeError,
+    selectedResort,
+  ]
 
   return (
     <div className="mt-16 h-96 overflow-hidden sm:mt-20" ref={containerRef}>
