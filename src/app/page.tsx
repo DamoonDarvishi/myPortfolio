@@ -238,6 +238,9 @@ export default async function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
+          <span className="text-2xl font-bold text-zinc-800 dark:text-zinc-100">
+            Damoon Darvishi
+          </span>
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             I am a <TypewriterEffect />
           </h1>
